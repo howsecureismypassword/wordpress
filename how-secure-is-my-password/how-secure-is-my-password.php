@@ -9,9 +9,9 @@
  * License: MIT
  */
 
-    echo get_current_screen();
 function hsimp_scripts() {
     wp_enqueue_script('hsimp.jquery.min.js', plugins_url('hsimp.jquery.min.js', __FILE__), array('jquery'), '0.1', true);
+    wp_enqueue_script('hsimp.wordpress.js', plugins_url('hsimp.wordpress.js', __FILE__), array('hsimp.jquery.min.js', 'jquery'), '0.1', true);
     wp_enqueue_style('hsimp.min.css', plugins_url('hsimp.min.css', __FILE__));
 }
 
