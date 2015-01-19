@@ -1,0 +1,17 @@
+{
+  "name": "how-secure-is-my-password--wordpress",
+  "version": "0.1.0",
+  "description": "How Secure Is My Password? WordPress Plugin",
+  "author": "Small Hadron Collider",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/howsecureismypassword/wordpress.git"
+  },
+  "dependencies": {
+    "main": "git://github.com/howsecureismypassword/jquery.git#develop"
+  },
+  "devDependencies": {
+    "uglify-js": "2.*"
+  }
+}
