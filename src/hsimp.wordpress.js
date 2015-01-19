@@ -8,5 +8,5 @@ jQuery(function ($) {
     $(".description.indicator-hint").remove();
 
     // Initialise how secure is my password code
-    $("#pass1").hsimp();
+    $("#pass1").hsimp(window.wpHSIMPSettings || {});
 });
