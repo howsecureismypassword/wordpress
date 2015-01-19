@@ -1,0 +1,11 @@
+# WordPress
+_wordpress/
+
+# Node
+node_modules/
+
+# Makefile
+*.ref
+
+# PHP
+php_errors.log
