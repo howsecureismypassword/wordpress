@@ -48,7 +48,7 @@ class Plugin_HSIMP {
         $values = $this->get_values();
     ?>
     <div class="wrap">
-        <form action="admin.php?page=hsimp-settings" method="post" name="options">
+        <form action="options-general.php?page=hsimp-settings" method="post" name="options">
             <h2>How Secure Is My Password? Settings</h2>
 
             <?php echo wp_nonce_field("hsimp-settings") ?>
@@ -81,7 +81,7 @@ class Plugin_HSIMP {
 
     // Render settings link
     public function render_settings_link($links) {
-        $link = '<a href="?page=hsimp-settings">Settings</a>';
+        $link = '<a href="options-general.php?page=hsimp-settings">Settings</a>';
         array_push($links, $link);
         return $links;
     }
