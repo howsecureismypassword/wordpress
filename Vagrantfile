@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "smallhadroncollider/centos-6.4-lamp"
   config.vm.box_version = ">= 1.1"
 
-  config.vm.synced_folder "_wordpress", "/var/www/public"
+  config.vm.synced_folder ".wordpress", "/var/www/public"
   config.vm.hostname = "hsimp-wordpress.dev"
   config.vm.network "private_network", ip: "172.31.254.246"
 
