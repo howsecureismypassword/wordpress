@@ -9,6 +9,7 @@ Copy the `how-secure-is-my-password` directory into `wp-content/plugins` and the
 
 # Development
 
+## Environment
 Use Vagrant to start a development VM:
 
 ```shell
@@ -17,6 +18,17 @@ vagrant up
 
 The provisioning script will install the latest version of WordPress and set up the DB as well as creating a symbolic link from the `how-secure-is-my-password` directory to the `wp-content/plugins` directory.
 
+## Building
+
+You will need to install the NPM dependencies first:
+
+```shell
+npm install
+```
+
+You can then run `make` to build a new version of the files after making any changes to `src/hsimp.wordpres.js` or `build/how-secure-is-my-password.php`.
+
+You can also run `sh watch` in the root directory to automatically build the files when you make any changes.
 
 # License
 
