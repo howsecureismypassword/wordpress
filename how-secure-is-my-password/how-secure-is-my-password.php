@@ -33,7 +33,7 @@ class Plugin_HSIMP {
 
     // Add settings page
     public function add_settings_page() {
-        add_menu_page(
+        add_options_page(
             "How Secure Is My Password",
             "How Secure Is My Password",
             "read",
@@ -48,7 +48,7 @@ class Plugin_HSIMP {
         $values = $this->get_values();
     ?>
     <div class="wrap">
-        <form action="plugins.php?page=hsimp-settings" method="post" name="options">
+        <form action="admin.php?page=hsimp-settings" method="post" name="options">
             <h2>How Secure Is My Password? Settings</h2>
 
             <?php echo wp_nonce_field("hsimp-settings") ?>
