@@ -1,5 +1,9 @@
-# Install PHP LDAP extension
-sudo yum install php-gd -y
+# Install wordpress
+curl https://wordpress.org/latest.zip > /home/vagrant/wordpress.zip
+unzip /home/vagrant/wordpress.zip -d /home/vagrant
+rsync -a /home/vagrant/wordpress/. /var/www/public
+rm -r /home/vagrant/wordpress
+rm /home/vagrant/wordpress.zip
 
 # Increase MySQL memory limits
 cp "/var/www/public/wp-config-sample.php" "/var/www/public/wp-config.php"

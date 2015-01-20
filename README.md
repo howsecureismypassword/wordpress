@@ -9,9 +9,14 @@ Copy the `how-secure-is-my-password` directory into `wp-content/plugins` and the
 
 # Development
 
-Requires: Vagrant
+Use Vagrant to start a development VM:
 
-Copy the latest version of WordPress into a directory named `_wordpress` in the root directory. Then run `vagrant up`.
+```shell
+vagrant up
+```
+
+The provisioning script will install the latest version of WordPress and set up the DB as well as creating a symbolic link from the `how-secure-is-my-password` directory to the `wp-content/plugins` directory.
+
 
 # License
 
